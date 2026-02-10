@@ -1,0 +1,238 @@
+.page {
+  padding-bottom: 40px;
+}
+
+/* Delivery Strip */
+.deliveryStrip {
+  background: linear-gradient(90deg, #fc8019, #e23744);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.stripContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.stripIcon {
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Hero */
+.heroSection {
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 0 24px;
+}
+.carousel {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 260px;
+}
+.banner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 50px;
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: all 0.6s ease;
+  pointer-events: none;
+}
+.banner.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+.bannerBadge {
+  display: inline-block;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(4px);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  width: fit-content;
+}
+.bannerTitle {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.bannerSubtitle {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+.bannerCta {
+  font-size: 14px;
+  font-weight: 700;
+  background: rgba(255,255,255,0.2);
+  padding: 8px 20px;
+  border-radius: 8px;
+  width: fit-content;
+  backdrop-filter: blur(4px);
+  transition: background 0.3s;
+}
+.banner:hover .bannerCta {
+  background: rgba(255,255,255,0.35);
+}
+.dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.dot.activeDot {
+  background: white;
+  transform: scale(1.2);
+}
+
+/* Sections */
+.section {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 800;
+  color: #3d4152;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+.sectionSub {
+  font-size: 14px;
+  color: #93959f;
+  margin-bottom: 20px;
+}
+.sectionHeader {
+  margin-bottom: 4px;
+}
+
+/* Category Grid */
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 14px;
+}
+
+/* Product Grid */
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* Promo Banner */
+.promoBanner {
+  max-width: 1400px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+.promoContent {
+  background: linear-gradient(135deg, #1c1c2e, #2d2b55);
+  border-radius: 20px;
+  padding: 36px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.promoText h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 4px;
+}
+.promoText p {
+  color: #a0a3b1;
+  font-size: 15px;
+}
+.promoBtn {
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #fc8019, #e23744);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+.promoBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(226, 55, 68, 0.4);
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+.feature {
+  text-align: center;
+  padding: 32px 20px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #f0f0f5;
+  transition: all 0.3s ease;
+}
+.feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+}
+.featureIcon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 14px;
+}
+.feature h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #3d4152;
+}
+.feature p {
+  font-size: 13px;
+  color: #93959f;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .carousel { height: 200px; }
+  .bannerTitle { font-size: 24px; }
+  .banner { padding: 24px; }
+  .categoryGrid { grid-template-columns: repeat(3, 1fr); }
+  .productGrid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .features { grid-template-columns: repeat(2, 1fr); }
+  .promoContent { flex-direction: column; text-align: center; padding: 24px; }
+}

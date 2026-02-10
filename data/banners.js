@@ -1,0 +1,42 @@
+export const banners = [
+  {
+    id: 1,
+    title: "Fresh Fruits & Veggies",
+    subtitle: "Up to 40% OFF on organic produce",
+    gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+    link: "/category/fruits-vegetables",
+    badge: "FRESH DEALS",
+  },
+  {
+    id: 2,
+    title: "Dairy Essentials",
+    subtitle: "Milk, Curd, Paneer & more delivered in 10 mins",
+    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    link: "/category/dairy-breakfast",
+    badge: "DAILY NEEDS",
+  },
+  {
+    id: 3,
+    title: "Snack Attack! 🍿",
+    subtitle: "Buy 2 Get 1 FREE on all munchies",
+    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    link: "/category/snacks-munchies",
+    badge: "BUY 2 GET 1",
+  },
+  {
+    id: 4,
+    title: "Weekend Special",
+    subtitle: "Flat ₹150 OFF on orders above ₹999",
+    gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    link: "/",
+    badge: "WEEKEND OFFER",
+  },
+  {
+    id: 5,
+    title: "Meat & Seafood Festival",
+    subtitle: "Fresh cuts delivered at your doorstep",
+    gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+    link: "/category/meat-fish",
+    badge: "FRESH & FAST",
+  },
+];

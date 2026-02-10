@@ -1,0 +1,109 @@
+.footer {
+  background: #1c1c2e;
+  color: #a0a3b1;
+  padding: 60px 0 0;
+  margin-top: 80px;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.brand {}
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.tagline {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.socials {
+  display: flex;
+  gap: 12px;
+}
+.socialLink {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.socialLink:hover {
+  background: #fc8019;
+  transform: translateY(-2px);
+}
+.links h4 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 0.3px;
+}
+.links a {
+  display: block;
+  color: #a0a3b1;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 0;
+  transition: color 0.2s;
+}
+.links a:hover {
+  color: #fc8019;
+}
+.appSection h4 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.appBadges {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.appBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.appBadge:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
+}
+.bottom {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 13px;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .brand { grid-column: 1 / -1; }
+  .appSection { grid-column: 1 / -1; }
+}
